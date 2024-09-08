@@ -19,19 +19,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
-
-// #define USE_MATRIX_I2C
-
-/* Select hand configuration */
-
-#define MASTER_LEFT
-// #define MASTER_RIGHT
-// #define EE_HANDS
-
+// trying to fix a bug in the firmware https://github.com/foostan/crkbd/issues/170
+#define SPLIT_USB_DETECT
 // #define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 200
+#define TAPPING_TERM 180
+
 // this is a potential solution to my space/ctrl issue pulled from: https://www.reddit.com/r/olkb/comments/8tbp1r/qmk_modtap_registering_mod_within_tapping_term/
-#define IGNORE_MOD_TAP_INTERRUPT
 #define PERMISSIVE_HOLD
 
 // Mouse stuff
@@ -46,4 +39,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX 64
 
-#define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
+#define USE_SERIAL
+#define MASTER_LEFT
