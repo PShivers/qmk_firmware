@@ -19,8 +19,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 #pragma once
-// trying to fix a bug in the firmware https://github.com/foostan/crkbd/issues/170
-#define SPLIT_USB_DETECT
+// trying to fix a bug in the firmware https://github.com/foostan/crkbd/issues/170 
+
 // #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 180
 
@@ -39,5 +39,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef MOUSEKEY_TIME_TO_MAX
 #define MOUSEKEY_TIME_TO_MAX 64
 
-#define USE_SERIAL
-#define MASTER_LEFT
+// #define USE_SERIAL
+// #define MASTER_LEFT
