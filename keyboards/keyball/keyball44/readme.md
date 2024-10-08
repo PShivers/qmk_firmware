@@ -18,3 +18,7 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 ## Special keycodes
 
 See [Special Keycode](../lib/keyball/keycodes.md) file.
+
+
+## My personal workflow stuff 
+In order to make this build I need to go into the test/qmk_firmware run `make SKIP_GIT=yes keyball/keyball44:pshivers` and then take the UF2 file that it produces and drag it into the explorer window that pops up when I hold reset for more than 1 second.
